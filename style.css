@@ -368,3 +368,17 @@ footer {
 body.panel-is-open {
   overflow: hidden;
 }
+
+
+/* ---------- 13. GAME COVERS ----------
+   The cover picture on a game page. max-width: 100% shrinks it on phones;
+   height: auto keeps its shape while it shrinks */
+.cover {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  border: 1px solid var(--border);
+}
+.cover:hover {
+  border-color: var(--neon);         /* red frame on hover, like the links */
+}

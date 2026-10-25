@@ -14,6 +14,11 @@ nuked_duke works with radiation by day. After hours, this site documents what ha
 - [Robo Groove](https://xp.stoicscience.us/apps/robo-groove.html): A free loop machine for kids, built with AI in one evening with a parent and their kids. Gapless loops, overdubbing, saving, five animal musicians. No ads, no account, works offline. Runs in any browser; installs to the home screen on iPhone, iPad and Android.
 - [Launch Robo Groove](https://alexstoicu.github.io/robo-groove/): The app itself.
 
+## Games
+
+- [Trial Bike 2K](https://xp.stoicscience.us/games/trial-bike-2k.html): A free dirt-bike physics game for kids 6+, made with Claude. Driving School with Dummy Dan, then a farm, a quarry and an upside-down scrapyard on a magnet rail. Three stars per level, badges, 2-player pass-the-phone mode. Keyboard, touch or controller.
+- [Play Trial Bike 2K](https://xp.stoicscience.us/games/trial-bike-2k/): The game itself, one self-contained HTML file.
+
 ## About
 
 - [About Night Lab XP](https://xp.stoicscience.us/about.html): Who runs it, what it is, why it exists, house rules.
@@ -21,5 +26,5 @@ nuked_duke works with radiation by day. After hours, this site documents what ha
 
 ## Optional
 
-- [Games](https://xp.stoicscience.us/games.html): Coming soon.
+- [Games](https://xp.stoicscience.us/games.html): List of games.
 - [Sitemap](https://xp.stoicscience.us/sitemap.xml)
