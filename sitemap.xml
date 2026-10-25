@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- sitemap.xml: a list of every page, so crawlers don't miss any.
+     Add a <url> block for each new page; update <lastmod> when a page changes -->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>https://xp.stoicscience.us/</loc><lastmod>2026-10-25</lastmod></url>
+  <url><loc>https://xp.stoicscience.us/about.html</loc><lastmod>2026-10-25</lastmod></url>
+  <url><loc>https://xp.stoicscience.us/ai-experiments.html</loc><lastmod>2026-10-25</lastmod></url>
+  <url><loc>https://xp.stoicscience.us/experiments/codename-eagle.html</loc><lastmod>2026-10-25</lastmod></url>
+  <url><loc>https://xp.stoicscience.us/downloads/codename-eagle-win11-guide.md</loc><lastmod>2026-10-24</lastmod></url>
+  <url><loc>https://xp.stoicscience.us/apps.html</loc><lastmod>2026-10-25</lastmod></url>
+  <url><loc>https://xp.stoicscience.us/apps/robo-groove.html</loc><lastmod>2026-10-25</lastmod></url>
+  <url><loc>https://xp.stoicscience.us/journal.html</loc><lastmod>2026-10-25</lastmod></url>
+  <url><loc>https://xp.stoicscience.us/games.html</loc><lastmod>2026-10-25</lastmod></url>
+</urlset>

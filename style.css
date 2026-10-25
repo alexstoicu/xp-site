@@ -304,3 +304,67 @@ footer {
   color: var(--dim);
   margin-bottom: 0;
 }
+
+
+/* ---------- 12. SLIDE-IN APP PANEL ----------
+   A full-screen card that waits just off the right edge of the screen,
+   then slides in when it gets the "open" class. */
+
+/* Buttons that open/close the panel: same look as the comment button */
+.panel-open,
+.panel-close {
+  background: var(--border);
+  color: #000;
+  border: none;
+  font-family: inherit;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding: 3px 10px;
+  cursor: pointer;
+}
+.panel-open:hover,
+.panel-close:hover {
+  background: var(--neon);
+}
+
+.app-panel {
+  position: fixed;                    /* pinned to the screen, not the page */
+  inset: 0;                           /* top, right, bottom, left all 0 = covers the screen */
+  z-index: 100;                       /* sits on top of everything else */
+  background: var(--bg);
+  display: flex;
+  flex-direction: column;             /* bar on top, app fills the rest */
+  transform: translateX(100%);        /* shifted one full screen-width to the right = hidden */
+  transition: transform 0.35s ease;   /* animate the slide */
+  visibility: hidden;                 /* fully hidden while parked off-screen */
+}
+
+.app-panel.open {
+  transform: translateX(0);           /* slide back into view */
+  visibility: visible;
+}
+
+/* The bar across the top of the panel.
+   env(safe-area-inset-top) adds room for a phone's notch */
+.app-panel-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;     /* back left, title middle, link right */
+  gap: 8px;
+  flex-wrap: wrap;
+  padding: 6px 8px;
+  padding-top: calc(6px + env(safe-area-inset-top, 0px));
+  border-bottom: 1px solid var(--border);
+}
+
+.app-panel iframe {
+  flex: 1;                            /* take all the height left under the bar */
+  width: 100%;
+  border: 0;                          /* iframes get a default border; remove it */
+}
+
+/* While the panel is open, stop the page behind it from scrolling */
+body.panel-is-open {
+  overflow: hidden;
+}

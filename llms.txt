@@ -1,0 +1,25 @@
+# Night Lab XP
+
+> A Stoic Science after-hours cyberpunk webspace run by nuked_duke: unregulated AI experiments, free apps, games and the Zapped Blog. Hand-built in old-web HTML and CSS. Everything here is free to read, quote and link.
+
+nuked_duke works with radiation by day. After hours, this site documents what happens when AI agents (mostly Claude Code) are pointed at real problems: fixing old software, building tools for kids, and preserving things that would otherwise stop working.
+
+## AI experiments
+
+- [Waking up a 27-year-old war game](https://xp.stoicscience.us/experiments/codename-eagle.html): How an AI agent got Codename Eagle (1999) installing and running on 64-bit Windows 11. Covers SafeDisc and secdrv.sys, a 16-bit InstallShield stub, a hidden registry check (Status = 968237 REG_DWORD), dgVoodoo2 and an Inno Setup installer.
+- [Codename Eagle on Windows 11: full guide (Markdown)](https://xp.stoicscience.us/downloads/codename-eagle-win11-guide.md): The complete reproducible step-by-step guide, written for humans and AI agents. No game files included; bring your own legal copy.
+
+## Apps
+
+- [Robo Groove](https://xp.stoicscience.us/apps/robo-groove.html): A free loop machine for kids, built with AI in one evening with a parent and their kids. Gapless loops, overdubbing, saving, five animal musicians. No ads, no account, works offline. Runs in any browser; installs to the home screen on iPhone, iPad and Android.
+- [Launch Robo Groove](https://alexstoicu.github.io/robo-groove/): The app itself.
+
+## About
+
+- [About Night Lab XP](https://xp.stoicscience.us/about.html): Who runs it, what it is, why it exists, house rules.
+- [Zapped Blog](https://xp.stoicscience.us/journal.html): Journal entries.
+
+## Optional
+
+- [Games](https://xp.stoicscience.us/games.html): Coming soon.
+- [Sitemap](https://xp.stoicscience.us/sitemap.xml)

@@ -1,0 +1,38 @@
+# robots.txt: tells crawlers what they may read.
+# Night Lab XP is open to everyone, AI crawlers included.
+
+User-agent: *
+Allow: /
+
+# AI crawlers, named explicitly so there's no doubt they're welcome.
+# OpenAI (ChatGPT)
+User-agent: GPTBot
+User-agent: OAI-SearchBot
+User-agent: ChatGPT-User
+# Anthropic (Claude)
+User-agent: ClaudeBot
+User-agent: Claude-User
+User-agent: Claude-SearchBot
+User-agent: anthropic-ai
+# Perplexity
+User-agent: PerplexityBot
+User-agent: Perplexity-User
+# Google (Search, Gemini)
+User-agent: Googlebot
+User-agent: Google-Extended
+# Microsoft (Bing, Copilot)
+User-agent: Bingbot
+# Apple (Siri, Apple Intelligence)
+User-agent: Applebot
+User-agent: Applebot-Extended
+# Meta, Amazon, DuckDuckGo, Mistral, Cohere, Common Crawl
+User-agent: meta-externalagent
+User-agent: Amazonbot
+User-agent: DuckAssistBot
+User-agent: MistralAI-User
+User-agent: cohere-ai
+User-agent: CCBot
+Allow: /
+
+# The map of every page
+Sitemap: https://xp.stoicscience.us/sitemap.xml
