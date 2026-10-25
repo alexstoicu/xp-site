@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<!-- ZAPPED BLOG: the journal page. Same header and footer as index.html -->
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>zapped blog &middot; Night Lab XP</title>
+  <meta name="description" content="The Zapped Blog: journal entries from the Night Lab.">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- HEADER: copied from index.html. Keep the nav the same on every page -->
+  <header>
+    <!-- The title is the home link -->
+    <h1><a href="index.html">Night Lab XP</a></h1>
+
+    <nav>
+      <a href="ai-experiments.html">[ai experiments]</a> |
+      <a href="journal.html">[zapped blog]</a> |
+      <a href="games.html">[games]</a> |
+      <a href="apps.html">[apps]</a>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- SECTION: the journal, full width. Holds a list of entries -->
+    <section>
+      <h2>journal</h2>
+
+      <!-- ARTICLE: one self-contained journal entry.
+           Copy this whole <article> block to add a new post (newest on top) -->
+      <article class="box">
+        <!-- time = a machine-readable date; the text inside is what people see -->
+        <p class="date"><time datetime="2026-10-24">24 Oct 2026</time></p>
+        <h3>first transmission</h3>
+        <p>The lab is online. This is a half-hand-built page, no frameworks,
+           just HTML and CSS, the way the old web was made.</p>
+        <p>Coming soon: project pages and downloads.</p>
+        <!-- Small line at the end of each post -->
+        <p class="meta">mood: 50/50 &middot; comments (0)</p>
+      </article>
+
+    </section>
+
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Night Lab XP &middot; best viewed at 800x600 after midnight</p>
+  </footer>
+
+</body>
+</html>

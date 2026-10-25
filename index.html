@@ -9,7 +9,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- Text shown in the browser tab and in search results -->
   <title>Night Lab XP</title>
-  <meta name="description" content="A Stoic Science cyberpunk webspace. AI experiments, games, apps, and a blog after getting zapped.">
+  <meta name="description" content="A Stoic Science after-hour cyberpunk webspace experience. AI experiments, games, apps, and the zapped blog.">
   <!-- Links the stylesheet (we create style.css in step 3) -->
   <link rel="stylesheet" href="style.css">
 </head>
@@ -18,37 +18,73 @@
 
   <!-- HEADER: site name, tagline, and main navigation -->
   <header>
-    <h1>Night Lab XP</h1>
-    <p>a Stoic Science cyberpunk webspace. AI experiments, games, apps, and a blog after getting zapped.</p>
+    <!-- The title is the home link: click it to go back to the front page -->
+    <h1><a href="index.html">Night Lab XP</a></h1>
 
     <!-- nav = a group of site links. These pages get built in step 4 -->
     <nav>
-      <a href="index.html">home</a> |
-      <a href="journal.html">journal</a> |
-      <a href="projects.html">projects</a> |
-      <a href="downloads.html">downloads</a>
+      <a href="ai-experiments.html">[ai experiments]</a> |
+      <a href="journal.html">[zapped blog]</a> |
+      <a href="games.html">[games]</a> |
+      <a href="apps.html">[apps]</a>
     </nav>
   </header>
 
-  <!-- MAIN: the page's core content. Holds the two columns -->
+  <!-- MAIN: the page's core content.
+       Top row: profile (left) + about box (right). The journal lives on journal.html -->
   <main>
 
-    <!-- ASIDE: side content. This becomes the profile-style sidebar in step 2 -->
+    <!-- TOP ROW: a plain wrapper so CSS can put its two children side by side -->
+    <div class="top-row">
+
+    <!-- ASIDE: the profile-style sidebar.
+         Each class="box" div is one bordered box -->
     <aside>
-      <p>[ sidebar goes here ]</p>
+
+      <!-- PROFILE BOX: picture + handle + quick stats -->
+      <div class="box">
+        <h3>USERNAME</h3>
+        <!-- Placeholder until you add a real picture, e.g.
+             <img src="images/avatar.png" alt="my avatar" width="120"> -->
+        <img class="avatar" src="images/avatar.jpg" alt="nuked_duke helmet">
+        <p><strong>nuked_duke</strong></p>
+
+        <!-- dl = description list: pairs of <dt> (label) and <dd> (value) -->
+        <dl>
+          <dt>location</dt> <dd>cyberspace</dd>
+          <dt>mood</dt>     <dd>50/50</dd>
+          <dt>status</dt>   <dd>update in progress...</dd>
+          <dt>last seen</dt><dd>2026-10-24</dd>
+        </dl>
+      </div>
+
     </aside>
 
-    <!-- SECTION: a themed block of content. This becomes the journal column -->
-    <section>
-      <h2>journal</h2>
-      <p>[ journal entries go here ]</p>
-    </section>
+    <!-- ABOUT BOX: right of the sidebar. CSS stretches it to fill
+         the remaining width and match the sidebar's height -->
+    <div class="box about-box">
+      <h3>about</h3>
+      <p>Run by <strong>nuked_duke</strong>. Day job: radiation.
+         safety first. still gets zapped.</p>
+      <p>the perk: zapping lab mates who have zero idea what you're doing.
+         they glow with confusion.</p>
+      <p>this is the after-hours lab. disregulated AI experiments,
+         no roadmap, no off switch.</p>
+      <p>old-web looks. present-day work. cyberpunk future.
+         time is just another half-life.</p>
+      <p>plain, direct, no filter. bad puns at high doses.</p>
+      <!-- Link to the full about page -->
+      <p><a href="about.html">full exposure &raquo;</a></p>
+    </div>
+
+    </div>
+    <!-- end of TOP ROW -->
 
   </main>
 
   <!-- FOOTER: small print at the bottom of the page -->
   <footer>
-    <p>&copy; 2026 Night Lab XP &middot; best viewed at 800x600 after midnight</p>
+    <p>&copy; 2026 Night Lab Experience &middot; best viewed at 800x600 after midnight</p>
   </footer>
 
 </body>
