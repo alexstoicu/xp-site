@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<!-- EXPERIMENT PAGE: one experiment per file, inside the experiments/ folder.
+     This file is one folder deeper than index.html, so every link to the
+     main site starts with ../ ("go up one folder first") -->
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>waking up a 27-year-old war game &middot; Night Lab XP</title>
+  <meta name="description" content="How AI got Codename Eagle (1999) installing and running on Windows 11.">
+  <link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+
+  <!-- HEADER: copied from index.html, with ../ added to every link -->
+  <header>
+    <!-- The title is the home link -->
+    <h1><a href="../index.html">Night Lab XP</a></h1>
+
+    <nav>
+      <a href="../ai-experiments.html">[ai experiments]</a> |
+      <a href="../journal.html">[zapped blog]</a> |
+      <a href="../games.html">[games]</a> |
+      <a href="../apps.html">[apps]</a>
+    </nav>
+  </header>
+
+  <main>
+
+    <section>
+      <h2>ai experiments</h2>
+
+      <!-- ARTICLE: the experiment write-up -->
+      <article class="box">
+        <p class="date"><time datetime="2026-10-24">24 Oct 2026</time></p>
+        <h3>waking up a 27-year-old war game</h3>
+
+        <!-- THE STORY: why this experiment happened -->
+        <p><strong>why</strong></p>
+        <p>Early 2000s, Eastern Europe. New games reached us four ways:
+           the demo disc in a games magazine; a pirated copy from wherever,
+           because the internet wasn't in every home yet; two, maybe three
+           months of allowance for the original box, which never happened,
+           because kids have needs; or a ripped copy of someone's original CD,
+           if the disc let you and you knew someone with a CD writer.</p>
+        <p>I got <strong>Codename Eagle</strong> as a demo on a LEVEL magazine
+           disc and fell for it completely.</p>
+        <p>About a decade later I found the full game's disc images online.
+           By then the systems had changed, it wouldn't install, and I didn't
+           have the patience, knowledge, time or access to troubleshoot it
+           properly. So it sat on my drive for years.</p>
+        <p>Until 2026. Through the magic of AI it's now installed, playable,
+           and preserved as a simple installer. No disc needed. Just the kid
+           in me, finally playing the game he never could.</p>
+
+        <!-- THE PROBLEM -->
+        <p><strong>the problem</strong></p>
+        <p>Codename Eagle shipped in 1999 with a copy-lock called SafeDisc.
+           SafeDisc needed a tiny helper program buried deep in Windows, and
+           that helper simply doesn't exist on 64-bit Windows 11. It's not
+           broken, it's just gone, like a key for a lock no door uses anymore.</p>
+        <p>On top of that, the game's own "did you install me properly?" check
+           was looking for a secret number nobody had typed into the registry
+           in 27 years, so it quietly gave up and said "not installed" every
+           single time.</p>
+
+        <!-- WHAT THE AI DID: ol = ordered (numbered) list -->
+        <p><strong>what the AI did</strong></p>
+        <ol>
+          <li>Carefully peeled the game's data off its old CD image, sorting
+              the install files from the 13 music tracks.</li>
+          <li>Found a clean, unprotected copy of the main game program hiding
+              inside the publisher's own 1999 patch. No cracking, no shady
+              downloads, just an old patch nobody uses anymore.</li>
+          <li>Installed dgVoodoo2, a free translator that lets the game's
+              ancient 3D graphics talk to a modern graphics card.</li>
+          <li>The game still flatly refused to start. So it opened the program
+              itself with a disassembler and read it like a very old, very
+              stubborn diary, line by line.</li>
+          <li>Found the exact secret number it was waiting for, and quietly
+              left it in the registry where the game expected to find it.</li>
+          <li>Packed the whole fix into a real, single-file installer, so next
+              time it's just double-click and go. No disc required, ever again.</li>
+        </ol>
+
+        <!-- THE RESULT -->
+        <p><strong>result</strong></p>
+        <p>The game now installs cleanly, runs at modern resolution through
+           dgVoodoo2, and launches with one click. 27 years after release,
+           no disc in sight.</p>
+
+        <!-- DOWNLOADS: the "download" attribute tells the browser to save
+             the file instead of opening it as text -->
+        <p><strong>downloads</strong></p>
+        <ul>
+          <li><a href="../downloads/codename-eagle-win11-guide.md" download>codename-eagle-win11-guide.md</a>:
+              the full step-by-step guide, for humans and AI agents. Bring your own copy of the game.</li>
+        </ul>
+
+        <!-- Cryptic line: atmosphere, not an offer -->
+        <p>the installer itself never leaves the lab. no link, no mirror, no torrent.
+           some doors don't have handles on the outside.
+           if you know why, you already know where the comments are.</p>
+
+        <p class="meta">mood: 50/50 &middot; no disc in sight</p>
+      </article>
+
+      <!-- COMMENTS: approved comments are pasted here by hand.
+           Copy the <div class="comment"> block for each one you publish -->
+      <div class="box">
+        <h3>comments</h3>
+        <p class="dim">no transmissions yet.</p>
+        <!-- Example of a published comment:
+        <div class="comment">
+          <p class="meta">anonymous &middot; 25 Oct 2026</p>
+          <p>comment text here</p>
+        </div>
+        -->
+      </div>
+
+      <!-- COMMENT FORM: sends the comment to your email through Web3Forms.
+           Nothing is published automatically: you read it, then paste the
+           good ones into the comments box above. -->
+      <div class="box">
+        <h3>leave a comment</h3>
+        <!-- action = where the form sends its data; method="POST" = send it hidden, not in the URL -->
+        <form class="comment-form" action="https://api.web3forms.com/submit" method="POST">
+
+          <!-- Hidden fields: the visitor never sees these -->
+          <!-- Your Web3Forms key: tells Web3Forms which inbox to send to -->
+          <input type="hidden" name="access_key" value="347fa2f7-6c4d-4113-8c06-d35090430f7a">
+          <!-- Fixed subject: your Gmail filter catches "Night Lab XP comment" -->
+          <input type="hidden" name="subject" value="Night Lab XP comment: codename-eagle">
+          <input type="hidden" name="from_name" value="Night Lab XP">
+          <!-- Spam trap: hidden from people, bots tick it and get rejected -->
+          <input type="checkbox" name="botcheck" class="botcheck" tabindex="-1" autocomplete="off">
+
+          <!-- label = the text describing a field; for="..." links it to the field's id -->
+          <label for="name">name (optional, leave empty to stay anonymous)</label>
+          <input type="text" id="name" name="name" maxlength="60" placeholder="anonymous">
+
+          <label for="message">comment</label>
+          <!-- required = the browser won't send the form if this is empty -->
+          <textarea id="message" name="message" rows="5" maxlength="2000" required></textarea>
+
+          <button type="submit">transmit &raquo;</button>
+          <!-- The script below writes the result here -->
+          <p class="form-status" aria-live="polite"></p>
+        </form>
+      </div>
+
+      <!-- FORM SCRIPT: sends the form in the background, so the visitor
+           stays on this page and sees a short message instead.
+           Without JavaScript the form still works, it just opens
+           Web3Forms' own "thank you" page. -->
+      <script>
+        // Find the form and the status line on the page
+        const form = document.querySelector(".comment-form");
+        const status = form.querySelector(".form-status");
+
+        // Run this when the visitor clicks "transmit"
+        form.addEventListener("submit", async (event) => {
+          event.preventDefault();           // stop the normal page jump
+          status.textContent = "transmitting...";
+          try {
+            // fetch = send the form data to Web3Forms and wait for the answer
+            const response = await fetch(form.action, {
+              method: "POST",
+              body: new FormData(form)
+            });
+            if (response.ok) {
+              status.textContent = "received. it'll show up here if it survives review.";
+              form.reset();                 // empty the boxes
+            } else {
+              status.textContent = "signal lost. try again later.";
+            }
+          } catch (error) {
+            status.textContent = "signal lost. try again later.";
+          }
+        });
+      </script>
+
+      <!-- Back link to the list of experiments -->
+      <p><a href="../ai-experiments.html">&laquo; all experiments</a></p>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Night Lab Experience &middot; best viewed at 800x600 after midnight</p>
+  </footer>
+
+</body>
+</html>

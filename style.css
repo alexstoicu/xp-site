@@ -232,3 +232,75 @@ footer {
     width: 100%;
   }
 }
+
+
+/* ---------- 11. COMMENTS + COMMENT FORM ---------- */
+
+/* Gray text, e.g. "no transmissions yet." */
+.dim {
+  color: var(--dim);
+}
+
+/* One published comment: a dotted line between comments */
+.comment {
+  border-bottom: 1px dotted var(--border);
+  padding-bottom: 4px;
+  margin-bottom: 8px;
+}
+
+/* Each label sits on its own line above its field */
+.comment-form label {
+  display: block;
+  color: var(--dim);
+  margin: 6px 0 2px;
+}
+
+/* Text boxes: black, orange border, same small font as the page.
+   width: 100% + box-sizing: border-box = fill the box without
+   the padding/border pushing it wider */
+.comment-form input[type="text"],
+.comment-form textarea {
+  width: 100%;
+  box-sizing: border-box;
+  background: var(--bg);
+  color: var(--text);
+  border: 1px solid var(--border);
+  font-family: inherit;               /* forms don't inherit the page font by default */
+  font-size: 11px;
+  padding: 4px;
+}
+
+/* Glow when the visitor clicks into a field */
+.comment-form input[type="text"]:focus,
+.comment-form textarea:focus {
+  outline: none;
+  box-shadow: 0 0 4px var(--border);
+}
+
+/* The send button: solid orange bar like the box titles */
+.comment-form button {
+  margin-top: 8px;
+  background: var(--border);
+  color: #000;
+  border: none;
+  font-family: inherit;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding: 3px 10px;
+  cursor: pointer;                    /* hand cursor on hover */
+}
+.comment-form button:hover {
+  background: var(--neon);
+}
+
+/* Spam trap checkbox: removed from view for humans */
+.botcheck {
+  display: none;
+}
+
+/* Result message after sending */
+.form-status {
+  color: var(--dim);
+  margin-bottom: 0;
+}
